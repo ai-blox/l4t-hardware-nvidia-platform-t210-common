@@ -36,7 +36,7 @@
 		sor1 {
 			status = "okay";
 			/* nvidia,ddc-i2c-bus = <&hdmi_ddc>; */
-			nvidia,hpd-gpio = <&gpio TEGRA_GPIO(CC, 1) 1>; /* PN7 */
+			nvidia,hpd-gpio = <&gpio TEGRA_GPIO(CC, 1) GPIO_ACTIVE_LOW>; /* PN7 */
 			nvidia,active-panel = <&sor1_hdmi_display>;
 			hdmi-display {
 				status = "okay";
